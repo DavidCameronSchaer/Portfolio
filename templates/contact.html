@@ -1,0 +1,65 @@
+{% extends 'base.html' %} {% block content %}
+<!-- Page specific content -->
+
+<div class="container p-5">
+  <div class="row">
+    <div class="col-md-4">
+      <h2 class="mt-2 mb-2">Send me a message</h2>
+      <p class="lead mt-2 mb-2">
+        Bei Fragen oder Anfragen stehe ich jederzeit sehr gerne zur Verfügung
+        und werde jede Nachricht sofort beantworten. Ich freue mich auf Ihr
+        Schreiben.
+      </p>
+    </div>
+    <div class="col-md-8">
+      {% if success==1 %}
+      <p class="alert-success">Message sent successfully</p>
+      {% endif %}
+      <form action="" method="post">
+        <label for="name" class="form-label">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Name"
+          class="form-control mt-2 mb-2"
+          aria-required="true" />
+
+        <label for="email" class="form-label">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email"
+          class="form-control mt-2 mb-2"
+          aria-required="true" />
+
+        <label for="phone" class="form-label">Phone</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Phone"
+          class="form-control mt-2 mb-2"
+          aria-required="true" />
+
+        <label for="message" class="form-label">Message</label>
+        <textarea
+          id="message"
+          name="message"
+          placeholder="... danke für Ihre Nachricht"
+          class="form-control mt-2 mb-2"
+          cols="30"
+          rows="10"
+          aria-required="true"></textarea>
+        <div class="button-container-form">
+          <button class="button button-primary" type="submit">
+            Nachricht senden
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

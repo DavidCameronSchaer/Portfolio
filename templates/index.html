@@ -1,0 +1,43 @@
+{% extends 'base.html' %} {% block content %}
+<!-- Page specific content -->
+
+<div class="container-profile">
+  <div class="profile">
+    <div class="profile-text">
+      <h1 class="heading">Hallo, ich bin David</h1>
+      <h2>
+        Cinematograph, Content Creator, Online Marketing Specialist und
+        (durch)startender Webdesigner.
+      </h2>
+      <p>
+        Ich bin ein fokussierter und verantwortungsbewusster Content Creator.
+        Mit meinem Hintergrund als Photo- und Videograph, verstehe ich das
+        Medium Bild in seiner Gesamtheit. Mit meinen Weiterbildungen im
+        Marketing (Online Marketing Specialist) und Web Development (Audacity
+        Nanodegree), habe ich meine Kenntnisse vom analogen- ins digitale
+        Zeitalter transferiert. Somit bin ich in der Lage, ein Produkt von der
+        Kreation bis zur Publikation im Web zu begleiten.
+        <br />
+      </p>
+      <div class="button-container-main">
+        <a
+          href="{{ url_for('static', filename='files/dsc_cv.pdf') }}"
+          class="button button-primary"
+          download
+          >Download my CV</a
+        >
+
+        <a href="{{ url_for('contact') }}" class="button button-primary"
+          >Kontakt</a
+        >
+      </div>
+    </div>
+    <div class="profile-image">
+      <img
+        src="{{ url_for('static', filename='img/hero_img.png') }}"
+        alt="Your Name" />
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

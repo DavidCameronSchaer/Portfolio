@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap");
+
+:root {
+  --color-light: #ffffff;
+  --color-light-100: #f9f9f9;
+  --color-light-200: #f2f2f2;
+  --color-light-300: #eaeaea;
+  --color-light-400: #c1c1c1;
+  --color-light-900: #808080;
+  --color-light-shade: #fafffd;
+  --color-dark: #7f7f7f;
+  --color-dark-100: #787878;
+  --color-dark-400: #5e5e5e;
+  --color-dark-600: #313131;
+  --color-dark-900: #212121;
+  --color-primary: #1fbaa0;
+  --color-primary-shade: #198d7a;
+
+  --box-shadow: rgba(0 0 2 / 35%), 0px 20px 30px -10px;
+}
