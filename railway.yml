@@ -1,1 +1,4 @@
 buildpack: python
+
+commands:
+  start: python app.py
